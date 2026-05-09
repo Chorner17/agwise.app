@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgWise — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0D2818;
+      color: #D4E8CC;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 780px; margin: 0 auto; }
+    h1 {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .meta {
+      color: #A8C4A0;
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: #4CAF50;
+      font-size: 17px;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 12px;
+      color: #D4E8CC;
+    }
+    ul {
+      padding-left: 0;
+      margin-bottom: 12px;
+      list-style: none;
+    }
+    ul li {
+      font-size: 15px;
+      color: #D4E8CC;
+      padding: 3px 0 3px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '•';
+      color: #4CAF50;
+      position: absolute;
+      left: 4px;
+    }
+    .highlight {
+      background: rgba(255, 179, 0, 0.08);
+      border: 1px solid rgba(255, 179, 0, 0.3);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      color: #FFE082;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    a { color: #4CAF50; }
+    footer {
+      margin-top: 60px;
+      color: #A8C4A0;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Prairie Nomad Technologies<br>Last Updated: May 7, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>Prairie Nomad Technologies ("we," "our," or "us") operates the AgWise farm management application ("App"). This Privacy Policy explains how we collect, use, store, and protect your information when you use AgWise. By using AgWise, you agree to the collection and use of information in accordance with this policy.</p>
+
+    <h2>2. Information We Collect</h2>
+    <h3>2.1 Information You Provide</h3>
+    <p>When you create an account and use AgWise, you provide us with:</p>
+    <ul>
+      <li>Farm name and location (city/province)</li>
+      <li>Total acreage and field details (field names, acreage, crop types)</li>
+      <li>Phone number (used for account authentication)</li>
+      <li>Contact name (your personal name, used for personalization)</li>
+      <li>Email address (used for account recovery and sign in)</li>
+      <li>Grain bin inventory data (capacity, current fill, crop type)</li>
+      <li>Spray log records (products, rates, costs, dates)</li>
+      <li>Equipment information (name, type, purchase/sale prices, engine hours)</li>
+      <li>Maintenance and fuel log records</li>
+      <li>Grain contract details (crop, price, bushels, delivery dates)</li>
+      <li>Yield records (bu/ac, grade, revenue)</li>
+      <li>Cost of production data (seed, insurance, trucking, custom work costs)</li>
+      <li>Grain prices you enter manually</li>
+    </ul>
+
+    <h3>2.2 Information Collected Automatically</h3>
+    <p>When you use AgWise, we automatically collect:</p>
+    <ul>
+      <li>Device type and operating system</li>
+      <li>App usage analytics and crash reports</li>
+      <li>Device name (used for support requests)</li>
+      <li>App version (used for support requests)</li>
+      <li>GPS coordinates (only when you explicitly use the location feature to tag fields)</li>
+      <li>IP address</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>We use your information to:</p>
+    <ul>
+      <li>Provide and maintain the AgWise service</li>
+      <li>Authenticate your account via SMS verification</li>
+      <li>Sync your farm data across devices (Pro plan)</li>
+      <li>Generate AI-powered farm recommendations (described in Section 5)</li>
+      <li>Send notifications about contract deadlines, bin alerts, and time-sensitive recommendations</li>
+      <li>Improve the App and develop new features</li>
+      <li>Respond to customer support requests and identify your account</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>Your farm data is stored in two locations:</p>
+    <ul>
+      <li>Locally on your device using encrypted storage (Hive database)</li>
+      <li>On secure cloud servers provided by Supabase, Inc. (Pro plan subscribers)</li>
+    </ul>
+    <p>Supabase servers are located in the United States. By using the Pro plan, you consent to your data being transferred to and processed in the United States.</p>
+    <p>We implement industry-standard security measures including encrypted data transmission (HTTPS/TLS), encrypted local storage, and secure authentication tokens. However, no method of transmission over the internet is 100% secure.</p>
+
+    <h2>5. AI-Powered Recommendations</h2>
+    <div class="highlight">
+      ℹ️ This section describes how your farm data is processed by artificial intelligence to generate personalized recommendations. Please read carefully.
+    </div>
+
+    <h3>5.1 How AI Recommendations Work</h3>
+    <p>AgWise uses the Anthropic Claude API to generate personalized farm management recommendations. When you tap "Get Recommendations," the following information is sent to Anthropic's servers:</p>
+    <ul>
+      <li>Your farm name and location</li>
+      <li>Field names, acreage, and crop types</li>
+      <li>Bin inventory levels and crop types</li>
+      <li>Active grain contract details (crop, price, bushels remaining, delivery deadlines)</li>
+      <li>Cost of production data (breakeven prices, input costs per acre)</li>
+      <li>Grain prices you have entered in the app</li>
+      <li>Current weather conditions for your location</li>
+      <li>Recent agricultural news headlines (fetched from Google News RSS)</li>
+    </ul>
+
+    <h3>5.2 Third-Party AI Processing</h3>
+    <p>Your farm data is processed by Anthropic, PBC, a third-party artificial intelligence company. By using the AI Advisor feature, you consent to your data being transmitted to and processed by Anthropic in accordance with their Privacy Policy, available at <a href="https://www.anthropic.com/privacy">https://www.anthropic.com/privacy</a>.</p>
+    <p>Anthropic may use data submitted to their API to improve their models unless you have opted out under their terms. We recommend reviewing Anthropic's privacy policy and data usage terms.</p>
+
+    <h3>5.3 News Data</h3>
+    <p>AI recommendations may incorporate current agricultural news headlines fetched from Google News RSS. These headlines are fetched at the time you request recommendations and are not stored by AgWise beyond the current session.</p>
+
+    <h3>5.4 AI Recommendation Storage</h3>
+    <p>AI-generated recommendations are stored locally on your device only. Recommendations automatically expire after 3 to 14 days depending on priority. You may dismiss recommendations at any time. We do not store your AI recommendations on our servers.</p>
+
+    <h3>5.5 Opting Out of AI Features</h3>
+    <p>The AI Advisor feature is optional. You may choose not to use it by simply not tapping "Get Recommendations." If you do not use the AI Advisor, none of your farm data will be sent to Anthropic.</p>
+
+    <h2>6. Information Sharing</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. We share data only in the following circumstances:</p>
+    <ul>
+      <li>With Supabase, Inc. for cloud data storage and authentication (Pro plan)</li>
+      <li>With Anthropic, PBC for AI recommendation generation (only when you use the AI Advisor)</li>
+      <li>With Apple, Inc. for push notification delivery</li>
+      <li>With RevenueCat, Inc. for subscription and payment processing</li>
+      <li>When required by law or to protect our legal rights</li>
+      <li>In the event of a merger, acquisition, or sale of assets (you will be notified)</li>
+    </ul>
+
+    <h2>7. Data Retention</h2>
+    <p>We retain your data for as long as your account is active. If you delete your account:</p>
+    <ul>
+      <li>Your data is soft-deleted immediately and permanently deleted after 30 days</li>
+      <li>During the 30-day window, you may restore your account by signing in again</li>
+      <li>After 30 days, all farm data associated with your account is permanently deleted</li>
+    </ul>
+    <p>Local data on your device is retained until you uninstall the App or manually clear app data.</p>
+
+    <h2>8. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal information we hold about you</li>
+      <li>Correct inaccurate information</li>
+      <li>Request deletion of your account and data</li>
+      <li>Export your farm data (available via the PDF/CSV export features)</li>
+      <li>Opt out of AI features at any time</li>
+    </ul>
+    <p>To exercise these rights, contact us at <a href="mailto:privacy@agwise.app">privacy@agwise.app</a>.</p>
+
+    <h2>9. Your Rights Under PIPEDA</h2>
+    <p>As a Canadian resident, you have rights under the Personal Information Protection and Electronic Documents Act (PIPEDA), including the right to access personal information we hold about you, the right to correct inaccurate information, and the right to withdraw consent. Contact us at <a href="mailto:privacy@agwise.app">privacy@agwise.app</a> to exercise these rights.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>AgWise is not intended for use by individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will delete it immediately.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting a notice in the App or sending an SMS notification. Your continued use of AgWise after changes are posted constitutes acceptance of the revised policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us:</p>
+    <p>
+      Prairie Nomad Technologies<br>
+      Saskatchewan, Canada<br>
+      Email: <a href="mailto:privacy@agwise.app">privacy@agwise.app</a><br>
+      Website: <a href="https://agwise.app">agwise.app</a>
+    </p>
+
+    <footer>
+      <p>© 2026 Prairie Nomad Technologies. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
